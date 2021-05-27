@@ -1,0 +1,189 @@
+@import 'bootstrap';
+
+
+// 共通
+
+
+body {
+  background-color: #f7f6f5;
+  color: #333;
+  text-align: center;
+  padding-top: 70px;
+  margin: 0;
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .btn-original {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #AAFFFF;
+    color: #333;
+  }
+
+  .btn-original:hover {
+    background-color: #AADDFF;
+  }
+
+  .local_title {
+    margin: 50px auto 40px;
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      text-shadow: 0 4px 4px rgba(0,0,0,0.15);
+      margin: 0;
+    }
+  }
+}
+
+
+// header
+
+
+.site_header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: #f7f6f5;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 10px;
+
+  .header_logo {
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-size: 34px;
+    font-weight: 900;
+  }
+
+  ul {
+    li{
+      margin: 0 0 0 50px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+// top
+
+
+.top {
+  height: 460px;
+  background-image: url("apex_posts.png");
+  background-repeat: no-repeat;
+  background-position: top -70px center;
+  background-size: cover;
+
+  .top_heading {
+    width: 50%;
+    height: 100%;
+    background-color: rgba($color: #333, $alpha: 0.5);
+    padding-top: 150px;
+    margin: 0 auto;
+
+    .top_heading_title {
+      color: #fff;
+      margin: 0 0 35px;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+
+    .top_heading_btn {
+
+      .btn-original{
+        padding: 8px 70px;
+        margin: 5px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+// login, signup
+
+.form_field {
+
+  .field {
+    width: 700px;
+    margin: 0 auto 30px;
+    text-align: left;
+    
+    ::placeholder {
+      color: #CDD;
+    }
+
+    label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+
+  .field_check_box {
+    width: 700px;;
+    margin: -20px auto 0;
+    text-align: left;
+
+    .field_check_box_inner {
+      margin-left: 20px;
+      
+      label {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .actions {
+    margin: 10px 0 20px;
+
+    .btn-original {
+      width: 400px;
+      padding: 7px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+.form_sign_up {
+
+  .field {
+    margin: 0 auto 20px;
+  }
+
+  .actions {
+    margin-top: 30px;
+  }
+}
+
+
+// devise
+
+
+.page_transition {
+  margin: -10px auto 10px;
+  font-size: 12px;
+  
+  a {
+    color: #007BFF;
+  }
+
+  a:hover {
+    color: #0050A5;
+    text-decoration: underline;
+  }
+}

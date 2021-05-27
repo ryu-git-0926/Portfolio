@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top navbar-inverse shadow site_header">
+  <div class="container">
+    <%= link_to 'Fipex', root_path, class: "header_logo" %>
+    <nav class="navbar-expand-lg">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav_item"> <%= link_to 'ユーザー一覧', '#' %> </li>
+        <li class="nav_item"> <%= link_to '募集一覧', posts_path %> </li>
+        <li class="nav_item"> <%= link_to 'ログイン', new_user_session_path %> </li>
+        <li class="nav_item"> <%= link_to '新規登録', new_user_registration_path %> </li>
+        <li class="nav_item"> <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
