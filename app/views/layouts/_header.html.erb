@@ -5,9 +5,13 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="nav_item"> <%= link_to 'ユーザー一覧', '#' %> </li>
         <li class="nav_item"> <%= link_to '募集一覧', posts_path %> </li>
-        <li class="nav_item"> <%= link_to 'ログイン', new_user_session_path %> </li>
-        <li class="nav_item"> <%= link_to '新規登録', new_user_registration_path %> </li>
-        <li class="nav_item"> <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %> </li>
+        <% if user_signed_in? %>
+          <li class="nav_item"> <%= link_to 'プロフィール', '#' %> </li>
+          <li class="nav_item"> <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %> </li>
+        <% else %>
+          <li class="nav_item"> <%= link_to 'ログイン', new_user_session_path %> </li>
+          <li class="nav_item"> <%= link_to '新規登録', new_user_registration_path %> </li>
+        <% end %>
       </ul>
     </nav>
   </div>
